@@ -1,4 +1,3 @@
-// pages/LoginPage.ts
 import { Locator, expect } from '@playwright/test';
 import { BasePage } from './BasePage';
 
