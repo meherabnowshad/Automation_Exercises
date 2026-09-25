@@ -6,5 +6,17 @@ export default defineConfig({
     headless: false,
     screenshot: 'only-on-failure',
   },
+  projects: [
+    {
+      name: 'brave',
+      use: {
+        browserName: 'chromium',
+        launchOptions: {
+          executablePath: '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser',
+          slowMo: 500,
+        },
+      },
+    },
+  ],
   timeout: 30000,
 });
